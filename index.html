@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#07060a" />
+<title>Lunex Displays — Transparent LED & Holographic Displays That Sell</title>
+<meta name="description" content="Lunex Displays designs and installs transparent LED film, holographic window displays, and immersive LED for retail. Get a free 3D mockup & quote in 24 hours." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Lunex Displays" />
+<meta property="og:title" content="Lunex Displays — Transparent LED & Holographic Displays That Sell" />
+<meta property="og:description" content="Lunex Displays designs and installs transparent LED film, holographic window displays, and immersive LED for retail. Get a free 3D mockup & quote in 24 hours." />
+<meta property="og:image" content="https://lunexdisplays.com/images/logo-mark.svg" />
+<meta property="og:url" content="https://lunexdisplays.com/index.html" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Lunex Displays — Transparent LED & Holographic Displays That Sell" />
+<meta name="twitter:description" content="Lunex Displays designs and installs transparent LED film, holographic window displays, and immersive LED for retail. Get a free 3D mockup & quote in 24 hours." />
+<meta name="twitter:image" content="https://lunexdisplays.com/images/logo-mark.svg" />
+<link rel="apple-touch-icon" href="images/logo-mark.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Michroma&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/svg+xml" href="images/logo-mark.svg" />
+<link rel="stylesheet" href="css/styles.css?v=15" />
+<!-- Analytics & ad pixel — paste your IDs and uncomment to enable.
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+-->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Lunex Displays","description":"Transparent LED film, holographic window displays and immersive LED for retail and events.","image":"https://lunexdisplays.com/images/logo-mark.svg","telephone":"+1-312-555-0142","email":"hello@lunexdisplays.com","url":"https://lunexdisplays.com","areaServed":"US","priceRange":"$$"}</script>
+</head>
+<body>
+
+<!-- ============ SVG FILTERS (goo blob merge + liquid-glass distortion) ============ -->
+<svg class="svg-defs" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+      <feBlend in="SourceGraphic" in2="goo" />
+    </filter>
+    <filter id="container-glass" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05 0.05" numOctaves="1" seed="1" result="turbulence" />
+      <feGaussianBlur in="turbulence" stdDeviation="2" result="blurredNoise" />
+      <feDisplacementMap in="SourceGraphic" in2="blurredNoise" scale="70" xChannelSelector="R" yChannelSelector="B" result="displaced" />
+      <feGaussianBlur in="displaced" stdDeviation="4" result="finalBlur" />
+      <feComposite in="finalBlur" in2="finalBlur" operator="over" />
+    </filter>
+  </defs>
+</svg>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <div class="loader__mark">LUNEX&nbsp;DISPLAYS</div>
+    <div class="loader__bar"><span class="loader__fill" id="loaderFill"></span></div>
+    <div class="loader__meta">
+      <span class="loader__label">Loading the experience</span>
+      <span class="loader__pct" id="loaderPct">0%</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ GATEWAY (Rent vs Buy qualifier) ============ -->
+<div class="gateway" id="gateway" role="dialog" aria-modal="true" aria-labelledby="gwTitle">
+  <div class="gateway__panel">
+    <p class="eyebrow">Welcome to Lunex Displays</p>
+    <h2 class="gateway__title" id="gwTitle">What brings you in today?</h2>
+    <p class="gateway__sub">Tell us how you'll use the display and we'll point you to the right solution — and the fastest quote.</p>
+    <div class="gateway__choices">
+      <a class="choice" href="rent.html">
+        <span class="choice__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <span class="choice__k">Short term</span>
+        <span class="choice__t">Rent for an event</span>
+        <span class="choice__d">Trade shows, pop-ups, concerts and launches. Delivered, installed and dismantled for you.</span>
+        <span class="choice__go">See rental displays
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+      <a class="choice" href="buy.html">
+        <span class="choice__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V7l9-4 9 4v14"/><path d="M9 21v-6h6v6"/><path d="M3 11h18"/></svg></span>
+        <span class="choice__k">Permanent</span>
+        <span class="choice__t">Buy &amp; install</span>
+        <span class="choice__d">Storefronts, lobbies, malls and showrooms. Engineered, installed and warrantied for years.</span>
+        <span class="choice__go">See display products
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+    </div>
+    <button class="gateway__skip" id="gatewaySkip" type="button">I'm just browsing — show me the displays</button>
+  </div>
+</div>
+
+<!-- ============ FIXED HEADER: promo + topbar + mega nav ============ -->
+<header class="site-header" id="siteHeader">
+  <!-- urgency / promo strip -->
+  <div class="promo" id="promo">
+    <span>⚡ <strong>Now booking events</strong> — reserve your LED wall this month and get <strong>free Chicago delivery</strong>. <a href="rent.html">Check availability →</a></span>
+    <button class="promo__x" id="promoX" aria-label="Dismiss">×</button>
+  </div>
+
+  <!-- utility bar: contact + socials + quote -->
+  <div class="topbar">
+    <div class="topbar__group">
+      <a href="tel:+13125550142"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.8 2.1z"/></svg>+1 (312) 555-0142</a>
+      <a href="mailto:hello@lunexdisplays.com" class="hide-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>hello@lunexdisplays.com</a>
+    </div>
+    <div class="topbar__group">
+      <div class="topbar__socials">
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 11v6"/></svg></a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://wa.me/13125550142" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-5A8 8 0 1 1 8 19.3z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5"/></svg></a>
+      </div>
+      <a href="rent.html" class="btn btn--gold">Get a Rental Quote</a>
+    </div>
+  </div>
+
+  <!-- mega nav -->
+  <div class="nav" id="nav">
+    <a class="nav__brand" href="#top" aria-label="Lunex Displays home">
+      <span class="nav__monogram" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><defs><filter id="lxg" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.1"/></filter></defs><circle cx="16" cy="16" r="10.5" fill="none" stroke="#7fd6ff" stroke-opacity=".5" stroke-width="1.4"/><path d="M16 7 Q17.4 14.6 25 16 Q17.4 17.4 16 25 Q14.6 17.4 7 16 Q14.6 14.6 16 7 Z" fill="#dff4ff" opacity=".7" filter="url(#lxg)"/><path d="M16 8 Q17.2 14.8 24 16 Q17.2 17.2 16 24 Q14.8 17.2 8 16 Q14.8 14.8 16 8 Z" fill="#fff"/><circle cx="16" cy="16" r="1.6" fill="#bfefff"/></svg></span>
+      <span class="nav__name">Lunex&nbsp;Displays</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="rent.html" style="color:var(--gold)">Rent</a>
+      <a href="buy.html" style="color:var(--gold)">Buy</a>
+      <div class="nav__item has-mega">
+        <a href="#products">Products <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>
+        <div class="mega">
+          <div class="mega__grid">
+            <div class="mega__col">
+              <h5>Transparent &amp; Holographic</h5>
+              <a href="transparent-led-film.html">Transparent LED Film</a>
+              <a href="holographic-window.html">Holographic Window Display</a>
+              <a href="flexible-curved-led.html">Flexible LED Film</a>
+              <a href="flexible-curved-led.html">Curved Transparent Screen</a>
+              <a href="transparent-led-film.html">Adhesive LED Film</a>
+            </div>
+            <div class="mega__col">
+              <h5>Indoor Displays</h5>
+              <a href="fine-pitch-video-wall.html">Fine Pixel-Pitch Video Wall</a>
+              <a href="fine-pitch-video-wall.html">COB LED Display</a>
+              <a href="fine-pitch-video-wall.html">LED Poster Display</a>
+              <a href="led-staircase-floor.html">Interactive LED Floor</a>
+              <a href="led-staircase-floor.html">LED Staircase</a>
+            </div>
+            <div class="mega__col">
+              <h5>Outdoor &amp; Rental</h5>
+              <a href="outdoor-led.html">Outdoor LED Billboard</a>
+              <a href="outdoor-led.html">Media Facade Display</a>
+              <a href="rental-led-wall.html">Rental LED Screen</a>
+              <a href="stage-concert-wall.html">Stage &amp; XR LED Wall</a>
+              <a href="outdoor-led.html">Double-Sided LED Sign</a>
+            </div>
+            <div class="mega__col mega__feat">
+              <h5>Not sure what you need?</h5>
+              <p>Send us your space and goal — we'll spec the right display and send a free 3D mockup in 24h.</p>
+              <a href="#quote" class="btn btn--gold">Get my free spec</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav__item has-mega">
+        <a href="#solutions">Solutions <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>
+        <div class="mega">
+          <div class="mega__grid">
+            <div class="mega__col">
+              <h5>Retail</h5>
+              <a href="#solutions">Storefront Windows</a>
+              <a href="#solutions">Shopping Malls</a>
+              <a href="#solutions">Showrooms</a>
+              <a href="#solutions">Pop-up Stores</a>
+            </div>
+            <div class="mega__col">
+              <h5>Spaces</h5>
+              <a href="#solutions">Corporate Lobbies</a>
+              <a href="#solutions">Hospitality &amp; Hotels</a>
+              <a href="#solutions">Restaurants &amp; Bars</a>
+              <a href="#solutions">Airports &amp; Transit</a>
+            </div>
+            <div class="mega__col">
+              <h5>Events</h5>
+              <a href="rent.html">Trade Shows</a>
+              <a href="rent.html">Concerts &amp; Stage</a>
+              <a href="rent.html">Product Launches</a>
+              <a href="rent.html">Stadiums &amp; Arenas</a>
+            </div>
+            <div class="mega__col mega__feat">
+              <h5>Done-for-you</h5>
+              <p>Design, manufacture, ship, install and support — one team, one warranty, anywhere.</p>
+              <a href="#quote" class="btn btn--gold">Talk to an expert</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#proof">Why Lunex</a>
+      <a href="#quote">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="tel:+13125550142" class="btn btn--ghost nav__cta">Call Now</a>
+      <a href="rent.html" class="btn btn--gold nav__cta">Rent a Wall</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMobile">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-mobile" id="navMobile" hidden>
+  <a href="#products">Products</a>
+  <a href="#solutions">Solutions</a>
+  <a href="rent.html">Rent for an Event</a>
+  <a href="buy.html">Buy &amp; Install</a>
+  <a href="#proof">Why Lunex</a>
+  <a href="#quote">Get a Free Quote</a>
+  <a href="tel:+13125550142">Call +1 (312) 555-0142</a>
+</div>
+
+<main id="top">
+
+  <!-- ============ HERO (photoreal AI imagery) ============ -->
+  <section class="hero2" id="journey" aria-label="Lunex Displays">
+    <div class="hero2__media" id="heroParallax" aria-hidden="true">
+      <img class="hero2__img" id="heroImg" src="images/hero.jpg" alt="" />
+    </div>
+    <div class="stage__grain" aria-hidden="true"></div>
+    <div class="hero2__scrim" aria-hidden="true"></div>
+    <div class="wrap hero2__inner">
+      <p class="eyebrow reveal">LED Walls for Events &amp; Retail</p>
+      <h1 class="hero__title reveal">Rent The Wall.<br><span class="grad">Own The Room.</span></h1>
+      <p class="hero__sub reveal">Premium LED video walls — delivered, installed and run for your event. Or bought outright for your space.</p>
+      <div class="hero__cta reveal">
+        <a href="rent.html" class="btn btn--gold btn--lg">Get a Rental Quote</a>
+        <a href="tel:+13125550142" class="btn btn--ghost btn--lg">Call an Expert</a>
+      </div>
+      <p class="hero__trust reveal">Free 3D mockup · delivered &amp; installed end-to-end · 5-year warranty</p>
+    </div>
+    <div class="scrollcue hero2__cue" aria-hidden="true">
+      <span>Scroll</span>
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section steps" id="how">
+    <div class="wrap">
+      <p class="eyebrow reveal">How it works</p>
+      <h2 class="display reveal">From idea to <span class="grad">installed.</span></h2>
+      <div class="steps__row">
+        <div class="step reveal">
+          <span class="step__n">01</span>
+          <h3>Tell us your space</h3>
+          <p>Send a photo, sketch, or just your goal — storefront, stage, lobby, anywhere.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step__n">02</span>
+          <h3>See it before you buy</h3>
+          <p>A free 3D mockup and a fixed quote land in your inbox within 24 hours.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step__n">03</span>
+          <h3>We install &amp; support it</h3>
+          <p>Delivered, installed and backed by a 5-year warranty — one team, start to finish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GRADIENT BRIDGE ============ -->
+  <section class="bridge">
+    <div class="gradient-anim" aria-hidden="true">
+      <div class="gradient-anim__blobs">
+        <span class="g g1"></span><span class="g g2"></span><span class="g g3"></span><span class="g g4"></span><span class="g g5"></span>
+      </div>
+    </div>
+    <div class="bridge__scrim" aria-hidden="true"></div>
+    <div class="wrap bridge__inner">
+      <p class="eyebrow reveal">See it in your space</p>
+      <h2 class="display reveal">Picture your brand<br>in <span class="grad">living light.</span></h2>
+      <p class="lede reveal">Send us a photo of your storefront and we'll send back a free 3D mockup — usually within 24 hours, no obligation.</p>
+      <div class="bridge__cta reveal">
+        <a href="#quote" class="btn btn--liquid btn--lg">
+          <span class="btn--liquid__edge" aria-hidden="true"></span>
+          <span class="btn--liquid__distort" aria-hidden="true"></span>
+          <span class="btn--liquid__label">Get My Free Mockup</span>
+        </a>
+        <a href="tel:+13125550142" class="btn btn--liquid btn--lg">
+          <span class="btn--liquid__edge" aria-hidden="true"></span>
+          <span class="btn--liquid__distort" aria-hidden="true"></span>
+          <span class="btn--liquid__label">Call an Expert</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOCIAL PROOF ============ -->
+  <section class="proof" id="proof">
+    <div class="wrap">
+      <p class="eyebrow reveal" style="justify-content:center;display:inline-flex;width:100%">What you get with Lunex</p>
+      <div class="proof__stats" style="margin-top:2.2rem">
+        <div class="reveal"><div class="proof__n" data-count="24"><b>h</b></div><div class="proof__l">Quote turnaround</div></div>
+        <div class="reveal"><div class="proof__n" data-count="3"><b>D</b></div><div class="proof__l">Free mockup before you commit</div></div>
+        <div class="reveal"><div class="proof__n" data-count="5"><b>yr</b></div><div class="proof__l">Manufacturer warranty</div></div>
+        <div class="reveal"><div class="proof__n" data-count="100"><b>%</b></div><div class="proof__l">Handled end-to-end</div></div>
+      </div>
+      <div class="badges reveal">
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>CE Certified</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>RoHS Compliant</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>ISO 9001</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>FCC</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>5-Year Warranty</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>24/7 Support</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section class="section tech" id="products">
+    <div class="wrap">
+      <p class="eyebrow reveal">Rent it · Buy it</p>
+      <h2 class="display reveal">Rent for the night,<br>or <span class="grad">own it for good.</span></h2>
+      <div class="grid" style="padding-top:clamp(36px,5vh,56px)">
+
+        <article class="product reveal">
+          <div class="product__media"><span class="product__tag">Most popular</span><img class="product__img" src="images/transparent-led-film.jpg" alt="Transparent LED Film" loading="lazy"></div>
+          <div class="product__body">
+            <h3 class="product__name"><a href="transparent-led-film.html">Transparent LED Film</a></h3>
+            <p class="product__meta">Up to 90% transparency · indoor windows</p>
+            <div class="product__row"><p class="product__price"><span class="product__from">From</span> <b>$1,900</b><span>/m²</span></p></div>
+            <a href="#quote" class="btn btn--gold">Get a Quote</a>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__media"><span class="product__tag">Showstopper</span><img class="product__img" src="images/holographic-window.jpg" alt="Holographic Window Display" loading="lazy"></div>
+          <div class="product__body">
+            <h3 class="product__name"><a href="holographic-window.html">Holographic Window Display</a></h3>
+            <p class="product__meta">Floating 3D product reveals</p>
+            <div class="product__row"><p class="product__price"><span class="product__from">From</span> <b>$2,900</b></p></div>
+            <a href="#quote" class="btn btn--gold">Get a Quote</a>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__media"><img class="product__img" src="images/flexible-curved-led.jpg" alt="Flexible / Curved LED" loading="lazy"></div>
+          <div class="product__body">
+            <h3 class="product__name"><a href="flexible-curved-led.html">Flexible / Curved LED Film</a></h3>
+            <p class="product__meta">Wraps columns, curves &amp; corners</p>
+            <div class="product__row"><p class="product__price"><span class="product__from">From</span> <b>$1,400</b><span>/m²</span></p></div>
+            <a href="#quote" class="btn btn--gold">Get a Quote</a>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__media"><img class="product__img" src="images/fine-pitch-video-wall.jpg" alt="Fine-Pitch LED Video Wall" loading="lazy"></div>
+          <div class="product__body">
+            <h3 class="product__name"><a href="fine-pitch-video-wall.html">Fine-Pitch LED Video Wall</a></h3>
+            <p class="product__meta">Seamless indoor, P0.9–P2.5</p>
+            <div class="product__row"><p class="product__price"><span class="product__from">From</span> <b>$1,800</b><span>/m²</span></p></div>
+            <a href="#quote" class="btn btn--gold">Get a Quote</a>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__media"><span class="product__tag">Most booked</span><img class="product__img" src="images/rental-led-wall.jpg" alt="Rental LED Wall" loading="lazy"></div>
+          <div class="product__body">
+            <h3 class="product__name"><a href="rental-led-wall.html">Rental LED Wall</a></h3>
+            <p class="product__meta">Events, stage &amp; expo · delivered &amp; run</p>
+            <div class="product__row"><p class="product__price"><span class="product__from">From</span> <b>$590</b><span>/m²/day</span></p></div>
+            <a href="rent.html" class="btn btn--gold">See Rentals</a>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__media"><img class="product__img" src="images/led-staircase-floor.jpg" alt="LED Staircase & Floor" loading="lazy"></div>
+          <div class="product__body">
+            <h3 class="product__name"><a href="led-staircase-floor.html">LED Staircase &amp; Floor</a></h3>
+            <p class="product__meta">Interactive, walkable displays</p>
+            <div class="product__row"><p class="product__price"><span class="product__from">From</span> <b>$780</b><span>/m²</span></p></div>
+            <a href="#quote" class="btn btn--gold">Get a Quote</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOLUTIONS ============ -->
+  <section class="section manifesto" id="solutions">
+    <div class="wrap">
+      <p class="eyebrow reveal">Solutions by space</p>
+      <h2 class="display reveal">One team, <span class="grad">end to end.</span></h2>
+      <p class="lede reveal">From the first mockup to the final bolt, Lunex designs, manufactures, ships, installs and supports your display — so you get the spectacle without the project headache.</p>
+      <div class="cards" style="margin-top:clamp(40px,6vh,72px)">
+        <article class="card reveal">
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9h16v11H4z"/><path d="M9 20v-6h6v6"/></svg></span>
+          <h3 class="card__title">Retail Storefronts</h3>
+          <p class="card__body">Transparent film that turns windows into 24/7 salespeople — lift walk-ins without blocking the view.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-5h6v5"/></svg></span>
+          <h3 class="card__title">Malls &amp; Lobbies</h3>
+          <p class="card__body">Atriums, staircases and feature walls that become landmarks people photograph and share.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16v10H4z"/><path d="M8 21h8M12 17v4"/></svg></span>
+          <h3 class="card__title">Events &amp; Rental</h3>
+          <p class="card__body">Stage, expo and launch displays — rented, delivered, installed and dismantled on your timeline.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section tech" id="testimonials">
+    <div class="wrap">
+      <p class="eyebrow reveal">Our promise</p>
+      <h2 class="display reveal">A new name — <span class="grad">a serious team.</span></h2>
+      <div class="tcards" style="margin-top:clamp(36px,5vh,56px)">
+        <article class="tcard reveal">
+          <div class="tcard__stars">✦</div>
+          <p class="tcard__q">See it first. We send a free 3D mockup of your exact storefront or space before you commit a dollar — no surprises.</p>
+          <div class="tcard__by"><span class="tcard__av">01</span><div><div class="tcard__name">No-risk start</div><div class="tcard__role">Free mockup + quote in 24h</div></div></div>
+        </article>
+        <article class="tcard reveal">
+          <div class="tcard__stars">✦</div>
+          <p class="tcard__q">Talk to a real engineer, not a call centre. Straight answers on pitch, brightness, install and budget within a day.</p>
+          <div class="tcard__by"><span class="tcard__av">02</span><div><div class="tcard__name">Straight answers</div><div class="tcard__role">Real product engineers</div></div></div>
+        </article>
+        <article class="tcard reveal">
+          <div class="tcard__stars">✦</div>
+          <p class="tcard__q">One team, end to end. We design, manufacture, ship, install and support — backed by a 5-year warranty.</p>
+          <div class="tcard__by"><span class="tcard__av">03</span><div><div class="tcard__name">Done for you</div><div class="tcard__role">Design → install → support</div></div></div>
+        </article>
+      </div>
+      <p class="lede reveal" style="margin-top:2rem;font-size:.95rem">Just launched — be one of our first flagship installs and get founder pricing. Real client reviews will appear here as projects ship.</p>
+    </div>
+  </section>
+
+  <!-- ============ LEAD-CAPTURE QUOTE FORM ============ -->
+  <section class="section quote" id="quote">
+    <div class="wrap quote__wrap">
+      <div class="quote__sell">
+        <span class="scarcity reveal"><span class="dot"></span>Only a few Q3 install slots left</span>
+        <h2 class="display reveal">Get your free quote<br>&amp; <span class="grad">3D mockup.</span></h2>
+        <p class="lede reveal" style="margin-bottom:1.8rem">No pushy sales calls. Tell us about your space and we'll send pricing and a visual — usually within 24 hours.</p>
+        <div class="reveal">
+          <div class="benefit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Free 3D mockup</b> of your storefront or space — no obligation.</span></div>
+          <div class="benefit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span><b>24-hour response</b> from a real display engineer, not a bot.</span></div>
+          <div class="benefit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span><b>5-year warranty</b> &amp; 24/7 support on every install.</span></div>
+          <div class="benefit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span><b>End-to-end</b> — we design, ship, install &amp; support. One team.</span></div>
+        </div>
+      </div>
+
+      <form class="quote__form reveal" id="quoteForm" novalidate>
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+        <input type="hidden" name="subject" value="New Lunex Displays quote request">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <h3>Request a Free Quote</h3>
+        <p class="sub">Step 1 of 1 — takes about 30 seconds.</p>
+        <div class="field-row">
+          <div class="field"><label for="q-name">Name</label><input id="q-name" name="name" type="text" autocomplete="name" placeholder="Your name" required /></div>
+          <div class="field"><label for="q-company">Company</label><input id="q-company" name="company" type="text" autocomplete="organization" placeholder="Business name" /></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="q-email">Email</label><input id="q-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@company.com" required /></div>
+          <div class="field"><label for="q-phone">Phone / WhatsApp</label><input id="q-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+1 (___) ___-____" required /></div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="q-type">What do you need?</label>
+            <select id="q-type" name="type">
+              <option value="">Rent or buy?…</option>
+              <option>Rental LED wall — event</option>
+              <option>Rental — trade show / expo</option>
+              <option>Rental — stage / concert</option>
+              <option>Buy — transparent storefront</option>
+              <option>Buy — indoor video wall</option>
+              <option>Buy — outdoor / billboard</option>
+              <option>Not sure — need advice</option>
+            </select>
+          </div>
+          <div class="field"><label for="q-date">Event / install date</label><input id="q-date" name="date" type="date" /></div>
+        </div>
+        <div class="field"><label for="q-msg">Size, venue &amp; details (optional)</label><textarea id="q-msg" name="message" placeholder="e.g. 16×9 ft wall, downtown Chicago, 2-day expo…"></textarea></div>
+        <button type="submit" class="btn btn--gold btn--lg">Get My Free Quote &amp; Mockup</button>
+        <p class="quote__note"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Your details are safe. No spam, ever.</p>
+        <p class="quote__msg" id="quoteMsg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <span class="footer__logo">Lunex&nbsp;Displays</span>
+      <p class="footer__tag">Transparent LED &amp; holographic displays that sell.</p>
+      <div class="footer__social" style="margin-top:18px">
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 11v6"/></svg></a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://wa.me/13125550142" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-5A8 8 0 1 1 8 19.3z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5"/></svg></a>
+      </div>
+    </div>
+    <nav class="footer__col" aria-label="Products">
+      <h4>Products</h4>
+      <a href="#products">Transparent LED Film</a>
+      <a href="#products">Holographic Display</a>
+      <a href="#products">LED Video Wall</a>
+      <a href="rent.html">Rental Screens</a>
+    </nav>
+    <nav class="footer__col" aria-label="Company">
+      <h4>Company</h4>
+      <a href="#solutions">Solutions</a>
+      <a href="#proof">Why Lunex</a>
+      <a href="#testimonials">Our promise</a>
+    </nav>
+    <div class="footer__col footer__contact">
+      <h4>Get in touch</h4>
+      <a href="tel:+13125550142"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.8 2.1z"/></svg>+1 (312) 555-0142</a>
+      <a href="mailto:hello@lunexdisplays.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>hello@lunexdisplays.com</a>
+      <a href="#quote"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Get a free quote</a>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© 2026 Lunex Displays · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span>
+    <span>CE · RoHS · ISO 9001 certified</span>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ACTION BUTTONS ============ -->
+<div class="fab" aria-label="Quick contact">
+  <a class="fab__call" href="tel:+13125550142" aria-label="Call Lunex Displays"><span class="fab__tip">Call us</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.8 2.1z"/></svg></a>
+  <a class="fab__wa" href="https://wa.me/13125550142" target="_blank" rel="noopener" aria-label="WhatsApp"><span class="fab__tip">WhatsApp</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-5A8 8 0 1 1 8 19.3z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5"/></svg></a>
+  <a class="fab__quote" href="#quote" aria-label="Get a free quote"><span class="fab__tip">Free quote</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></a>
+</div>
+
+<!-- ============ MOBILE STICKY CTA ============ -->
+<div class="mcta" aria-label="Quick actions">
+  <a href="tel:+13125550142"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.8 2.1z"/></svg>Call</a>
+  <a href="https://wa.me/13125550142" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-5A8 8 0 1 1 8 19.3z"/></svg>WhatsApp</a>
+  <a href="#quote" class="primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Free Quote</a>
+</div>
+
+<!-- ============ SCROLL LEAD POPUP ============ -->
+<div class="lead-pop" id="leadPop" role="dialog" aria-modal="true" aria-labelledby="leadTitle">
+  <div class="lead-pop__card">
+    <button class="lead-pop__x" id="leadX" aria-label="Close">×</button>
+    <p class="eyebrow" style="justify-content:center">Before you go</p>
+    <h3 id="leadTitle">Get the 2026 LED catalog<br>+ a free quote</h3>
+    <p>Pricing, specs and real install photos — plus a free 3D mockup of your space. Sent straight to your inbox.</p>
+    <form id="leadForm" novalidate>
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+      <input type="hidden" name="subject" value="Lunex catalog request">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input id="lead-email" type="email" inputmode="email" autocomplete="email" placeholder="Your email" required />
+      <input id="lead-phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Phone / WhatsApp (optional)" />
+      <button type="submit" class="btn btn--gold btn--lg">Send Me the Catalog</button>
+    </form>
+    <p class="lead-pop__fine" id="leadFine">No spam — unsubscribe anytime · we reply within 24 hours.</p>
+  </div>
+</div>
+
+<script src="js/main.js?v=7" defer></script>
+</body>
+</html>
