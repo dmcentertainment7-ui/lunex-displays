@@ -24,7 +24,8 @@
 
   const ctx = canvas.getContext('2d');
   const frames = new Array(FRAME_COUNT).fill(null);
-  const src = (i) => 'frames/frame_' + String(i + 1).padStart(4, '0') + '.jpg';
+  const FRAMESET = 'v2'; // bump when frames are replaced — filenames repeat across sets
+  const src = (i) => 'frames/frame_' + String(i + 1).padStart(4, '0') + '.jpg?' + FRAMESET;
 
   /* beat-copy windows from shot boundaries (fractions of the whole film) */
   const total = SHOTS.reduce((a, b) => a + b, 0);
