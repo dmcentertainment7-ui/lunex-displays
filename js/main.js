@@ -175,6 +175,22 @@
     });
   }
 
+  /* =========================================================
+     INTERACTIVE RENTAL SELECTOR (expanding panels)
+     ========================================================= */
+  const xsel = document.getElementById('xsel');
+  if (xsel) {
+    const opts = xsel.querySelectorAll('.xsel__opt');
+    opts.forEach((opt) => {
+      opt.addEventListener('click', () => {
+        if (opt.classList.contains('is-active')) return;
+        opts.forEach((o) => { o.classList.remove('is-active'); o.setAttribute('aria-selected', 'false'); });
+        opt.classList.add('is-active');
+        opt.setAttribute('aria-selected', 'true');
+      });
+    });
+  }
+
   // scroll-triggered lead popup (once per session)
   const leadPop = document.getElementById('leadPop');
   const leadX = document.getElementById('leadX');
