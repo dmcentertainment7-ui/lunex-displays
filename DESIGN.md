@@ -12,13 +12,13 @@ brand ORANGE. Never bypass tokens with raw hex in components.
 
 | Token | Value | Role |
 |---|---|---|
-| `--bg` | `#0b0b0d` | page background (near-black, slightly warm) |
-| `--bg-2` | `#121215` | elevated band / alt section |
-| `--bg-3` / `--panel` | `#17171b` | cards, panels, forms |
-| `--navy` | `#060607` | deepest band: footer, gateway backdrop |
-| `--fg` | `#f4f1ec` | primary text (warm white) |
-| `--muted` | `#aaa49b` | secondary text |
-| `--faint` | `#75706a` | tertiary/labels |
+| `--bg` | `#171008` | page background (warm ember black — Velocity-glow theme) |
+| `--bg-2` | `#1e150b` | elevated band / alt section (often layered under an orange radial glow) |
+| `--bg-3` / `--panel` | `#231809` | cards, panels, forms |
+| `--navy` | `#100a05` | deepest band: footer, gateway backdrop |
+| `--fg` | `#f7f1e8` | primary text (warm white) |
+| `--muted` | `#b7ab99` | secondary text |
+| `--faint` | `#80735f` | tertiary/labels |
 | `--gold` | `#ff7a1f` | PRIMARY ORANGE — CTAs, accents, links-hover |
 | `--gold-2` | `#ffa04d` | light orange (gradient start, glows) |
 | `--gold-deep` | `#e05e00` | deep orange (gradient end, emphasis text) |
