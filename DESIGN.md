@@ -1,10 +1,10 @@
 # Lunex Displays — Design System
 
 ## 1. Brand direction
-Dark cinematic showroom: **black stage, orange energy**. The site should feel like
-standing in front of a glowing LED wall in a dark venue. Positioning: *affordable but
-trustworthy* — orange carries energy/value (action color), near-black carries
-authority/premium. Orange is rationed: CTAs, accents, glows. Large surfaces stay black.
+Clean white catalog, **orange gradient energy**. Bright, organized, trustworthy —
+white surfaces + tight bold Inter headings carry clarity; orange gradients carry
+action (CTAs, accent words, the bridge band). The FILM HERO stays dark by design
+(space footage); everything after it is light. Dark footer anchors the page.
 
 ## 2. Color tokens (CSS custom properties in `css/styles.css`)
 Legacy note: accent vars are named `--gold` for historical reasons — they hold the
@@ -12,16 +12,16 @@ brand ORANGE. Never bypass tokens with raw hex in components.
 
 | Token | Value | Role |
 |---|---|---|
-| `--bg` | `#171008` | page background (warm ember black — Velocity-glow theme) |
-| `--bg-2` | `#1e150b` | elevated band / alt section (often layered under an orange radial glow) |
-| `--bg-3` / `--panel` | `#231809` | cards, panels, forms |
-| `--navy` | `#100a05` | deepest band: footer, gateway backdrop |
-| `--fg` | `#f7f1e8` | primary text (warm white) |
-| `--muted` | `#b7ab99` | secondary text |
-| `--faint` | `#80735f` | tertiary/labels |
-| `--gold` | `#ff7a1f` | PRIMARY ORANGE — CTAs, accents, links-hover |
-| `--gold-2` | `#ffa04d` | light orange (gradient start, glows) |
-| `--gold-deep` | `#e05e00` | deep orange (gradient end, emphasis text) |
+| `--bg` | `#ffffff` | page background (white) |
+| `--bg-2` | `#faf7f2` | warm off-white alt section |
+| `--bg-3` / `--panel` | `#ffffff` | cards, panels, forms |
+| `--navy` | `#141210` | dark band: footer, gateway backdrop (neutral, NOT brown) |
+| `--fg` | `#1a1613` | primary text (near-black) |
+| `--muted` | `#6b6259` | secondary text |
+| `--faint` | `#998f84` | tertiary/labels |
+| `--gold` | `#f26b0f` | PRIMARY ORANGE — CTAs, accents |
+| `--gold-2` | `#ff9a3d` | light orange (gradient start) |
+| `--gold-deep` | `#cc5200` | deep orange (gradient end, TEXT-SAFE accent on white) |
 | `--line` / `--hair` | `#26262b` | borders, dividers |
 | `--glass` | `#1c1c21` | tinted chip/icon backgrounds |
 | `--glass-brd` | `#2f2f36` | chip borders |
