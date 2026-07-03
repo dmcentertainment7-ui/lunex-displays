@@ -170,7 +170,7 @@
       qMsg.textContent = 'Sending…';
       sendForm(qForm).then((ok) => {
         if (ok) { qMsg.textContent = '✓ Thanks! Your free quote & 3D mockup are on the way — we’ll reply within 24 hours.'; qForm.reset(); }
-        else { qMsg.classList.add('is-error'); qMsg.textContent = 'Something went wrong — please call us at +1 (312) 555-0142.'; }
+        else { qMsg.classList.add('is-error'); qMsg.textContent = 'Something went wrong — please call us at +1 (630) 940-6069.'; }
       });
     });
   }
@@ -225,7 +225,7 @@
       leadFine.textContent = 'Sending…';
       sendForm(leadForm).then((ok) => {
         if (ok) { leadForm.innerHTML = ''; leadFine.textContent = '✓ Done! Check your inbox for the 2026 catalog & your quote.'; }
-        else { leadFine.textContent = 'Something went wrong — please email hello@lunexdisplays.com.'; }
+        else { leadFine.textContent = 'Something went wrong — please email info@lunexdisplays.com.'; }
       });
     });
   }
