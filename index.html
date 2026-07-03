@@ -217,26 +217,28 @@
 
 <main id="top">
 
-  <!-- ============ HERO (photoreal AI imagery) ============ -->
-  <section class="hero2" id="journey" aria-label="Lunex Displays">
-    <div class="hero2__media" id="heroParallax" aria-hidden="true">
-      <img class="hero2__img" id="heroImg" src="images/hero.jpg" alt="" />
-    </div>
-    <div class="stage__grain" aria-hidden="true"></div>
-    <div class="hero2__scrim" aria-hidden="true"></div>
-    <div class="wrap hero2__inner">
-      <p class="eyebrow reveal">LED Walls for Events &amp; Retail</p>
-      <h1 class="hero__title reveal">Rent The Wall.<br><span class="grad">Own The Room.</span></h1>
-      <p class="hero__sub reveal">Premium LED video walls — delivered, installed and run for your event. Or bought outright for your space.</p>
-      <div class="hero__cta reveal">
-        <a href="rent.html" class="btn btn--gold btn--lg">Get a Rental Quote</a>
-        <a href="tel:+13125550142" class="btn btn--ghost btn--lg">Call an Expert</a>
+  <!-- ============ FILM HERO (scroll-scrubbed journey: space → Chicago → LED wall) ============ -->
+  <section class="film" id="journey" aria-label="Lunex Displays">
+    <div class="film__stage">
+      <img class="film__poster" id="filmPoster" src="images/hero.jpg" alt="" />
+      <canvas class="film__canvas" id="filmCanvas" aria-hidden="true"></canvas>
+      <div class="film__beat" id="filmBeat0" aria-hidden="true"><p>Some moments feel unreal.</p></div>
+      <div class="film__beat" id="filmBeat1" aria-hidden="true"><p>We bring them down to earth.</p></div>
+      <div class="film__beat" id="filmBeat2" aria-hidden="true"><p>Pixel by pixel.</p></div>
+      <div class="wrap film__end" id="filmEnd">
+        <p class="eyebrow">LED Walls for Events &amp; Retail</p>
+        <h1 class="hero__title">Rent The Wall.<br><span class="grad">Own The Room.</span></h1>
+        <p class="hero__sub">Premium LED video walls — delivered, installed and run for your event. Or bought outright for your space.</p>
+        <div class="hero__cta">
+          <a href="rent.html" class="btn btn--gold btn--lg">Get a Rental Quote</a>
+          <a href="tel:+13125550142" class="btn btn--ghost btn--lg">Call an Expert</a>
+        </div>
+        <p class="hero__trust">Free 3D mockup · delivered &amp; installed end-to-end · 5-year warranty</p>
       </div>
-      <p class="hero__trust reveal">Free 3D mockup · delivered &amp; installed end-to-end · 5-year warranty</p>
-    </div>
-    <div class="scrollcue hero2__cue" aria-hidden="true">
-      <span>Scroll</span>
-      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      <div class="scrollcue film__cue" id="filmCue" aria-hidden="true">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </div>
     </div>
   </section>
 
@@ -564,5 +566,6 @@
 </div>
 
 <script src="js/main.js?v=7" defer></script>
+<script src="js/film.js?v=2" defer></script>
 </body>
 </html>
